@@ -26,6 +26,7 @@ return {
 			['<C-j>'] = require('telescope.actions').move_selection_next,
 		    },
            },
+        file_ignore_patterns = {".js", ".d.ts"},
          },
         extensions = {
           ['ui-select'] = {
@@ -49,6 +50,7 @@ return {
       vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
       vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
+      vim.keymap.set('n', '<leader>su', builtin.lsp_references, { desc = '[S]earch [U]sage of current word' })
       --vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
 
       -- Slightly advanced example of overriding default behavior and theme
