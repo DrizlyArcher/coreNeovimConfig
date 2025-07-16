@@ -29,4 +29,5 @@ require("lazy").setup({
 	require("plugins.completions"),
 	require("plugins.auto-pairs"),
 	require("plugins.nvim-ufo"),
+	require("plugins.copilot"),
 })
