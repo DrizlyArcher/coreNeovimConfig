@@ -36,10 +36,17 @@ return {
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" }, -- For luasnip users.
+					{ name = "copilot" },
 				}, {
 					{ name = "buffer" },
 				}),
 			})
+		end,
+	},
+	{
+		"zbirenbaum/copilot-cmp",
+		config = function()
+			require("copilot_cmp").setup({})
 		end,
 	},
 }
