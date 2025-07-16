@@ -8,7 +8,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 --Save file with cmd+s
-keymap("n", "<D-s>", ":w <CR>", opts)
+keymap("n", "<D-s>", ":wa <CR>", opts)
 
 --Use builtin file explorer
 -- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
