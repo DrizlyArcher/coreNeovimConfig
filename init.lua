@@ -31,5 +31,4 @@ require("plugins.colourscheme"),
   require("plugins.nvim-ufo"),
   require("plugins.visual-multi"),
   require("plugins.copilot"),
-  require("plugins.neo-test"),
 })
