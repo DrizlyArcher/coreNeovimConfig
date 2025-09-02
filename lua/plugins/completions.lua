@@ -13,7 +13,7 @@ return {
     "hrsh7th/nvim-cmp",
     config = function()
       local cmp = require("cmp")
-      require("luasnip").filetype_extend( "typescript", {"playwright", "javascript" })
+      require("luasnip").filetype_extend("typescript", { "playwright", "javascript" })
       require("luasnip.loaders.from_vscode").lazy_load()
 
       cmp.setup({
