@@ -1,3 +1,5 @@
+-- used to automatically insert a closing tag when you open one.
+-- Example: function doAThing( -> This will automatically close the tag
 return {
 	"windwp/nvim-autopairs",
 	event = "InsertEnter",

@@ -1,3 +1,4 @@
+-- multi select, akin to VsCdoes CMD+D
 return {
 	"mg979/vim-visual-multi",
   lazy = false, --Removed lazy load for now to prevent a minor stutter when using.

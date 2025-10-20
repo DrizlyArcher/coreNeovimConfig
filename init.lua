@@ -33,4 +33,5 @@ require("lazy").setup({
 	--require("plugins.copilot"),
 	require("plugins.glow-markdown"),
 	require("plugins.autotag"),
+	require("plugins.vim-surround"),
 })
