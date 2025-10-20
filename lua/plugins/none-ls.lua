@@ -12,7 +12,10 @@ return {
         null_ls.builtins.formatting.prettierd,
         null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.isort,
-        require("none-ls.diagnostics.eslint_d"),
+        --require("none-ls.diagnostics.eslint_d"),
+        --require("none-ls.diagnostics.eslint_d").with({
+        --  filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", ".tsx" },
+        --}),
       },
     })
 

@@ -1,3 +1,4 @@
+-- folding of code for easier navigation
 return {
   {
     "kevinhwang91/nvim-ufo",
