@@ -34,4 +34,5 @@ require("lazy").setup({
 	require("plugins.glow-markdown"),
 	require("plugins.autotag"),
 	require("plugins.vim-surround"),
+	require("plugins.neorg"),
 })
