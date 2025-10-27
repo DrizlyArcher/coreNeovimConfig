@@ -26,7 +26,5 @@ return {
   end,
   run = ":Neorg sync-parsers",
 
-  -- This first keybing most likely will not work, they do not expose workspaces outside the terminal
-  --vim.keymap.set({ "n", "<leader>nw", ,{buffer = true, desc = "[N]eorg choose [W]orkspace"} }),
   keymap("n", "<leader>ni", ":Neorg index<CR>", { desc = "[N]eorg open [I]ndex file" })
 }
