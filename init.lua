@@ -35,4 +35,5 @@ require("lazy").setup({
 	require("plugins.autotag"),
 	require("plugins.vim-surround"),
 	require("plugins.neorg"),
+	require("plugins.tiny-inline-diagnostic"),
 })
