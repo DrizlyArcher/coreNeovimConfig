@@ -15,8 +15,9 @@ keymap("n", "<D-s>", ":wa <CR>", opts)
 --Use Neotree file explorer
 keymap("n", "<leader>e", ":Neotree filesystem reveal left toggle <CR>", opts)
 
---Re-map 'Esc' to ctrl+x to trigger LSP update after editing
-keymap("i", "<C-c>", "<esc>", opts)
+--Re-map 'Esc' to ctrl+c to trigger LSP update and save all buffers, after editing
+keymap("i", "<C-c>", "<esc><cmd>wa<CR>", opts)
+keymap("n", "<C-c>", "<cmd>wa<CR>", opts) -- Handle if already exited input mode
 
 --Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)

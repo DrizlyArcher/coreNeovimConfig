@@ -16,7 +16,8 @@ return {
               notes = "~./notes",
               -- Work specific note locations
               ["cards-notes"] = "~./Desktop/Repositories/rise-pol/apps/cards/charlie-notes",
-              ["rec-cards-notes"] = "~./Desktop/Repositories/rise-pol/apps/reconciliation-cards/charlie-notes"
+              ["rec-cards-notes"] = "~./Desktop/Repositories/rise-pol/apps/reconciliation-cards/charlie-notes",
+              ["general-repo-notes"] = "~./Desktop/Repositories/rise-pol/apps/charlie-notes-general"
             },
             --default_workspace =  "~./notes"
           }
