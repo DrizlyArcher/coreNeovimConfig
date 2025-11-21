@@ -15,11 +15,15 @@ return {
             workspaces = {
               notes = "~./notes",
               -- Work specific note locations
-              ["cards-notes"] = "~./Desktop/Repositories/rise-pol/apps/cards/charlie-notes",
-              ["rec-cards-notes"] = "~./Desktop/Repositories/rise-pol/apps/reconciliation-cards/charlie-notes",
-              ["general-repo-notes"] = "~./Desktop/Repositories/rise-pol/apps/charlie-notes-general"
+              -- I am disabling these for now in favour of a centralised note location "~./notes", I think this has made the whole thing too complicated.
+              --["cards-notes"] = "~./Desktop/Repositories/rise-pol/apps/cards/charlie-notes",
+              --["rec-cards-notes"] = "~./Desktop/Repositories/rise-pol/apps/reconciliation-cards/charlie-notes",
+              --["payment-sessions-notes"] = "~./Desktop/Repositories/rise-pol/apps/payment-sessions/charlie-notes",
+              --["general-repo-notes"] = "~./Desktop/Repositories/rise-pol/apps/charlie-notes-general"
             },
-            --default_workspace =  "~./notes"
+            default_workspace = "notes",
+            open_last_workspace = true,
+            use_popup = true
           }
         }
       },
@@ -27,5 +31,6 @@ return {
   end,
   run = ":Neorg sync-parsers",
 
-  keymap("n", "<leader>ni", ":Neorg index<CR>", { desc = "[N]eorg open [I]ndex file" })
+  keymap("n", "<leader>ni", ":Neorg index<CR>", { desc = "[N]eorg open [I]ndex file" }),
+  keymap("n", "<leader>nd", ":Neorg journal custom<CR>", { desc = "[N]eorg open Journal by [D]ate" })
 }
