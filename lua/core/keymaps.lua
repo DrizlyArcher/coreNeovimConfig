@@ -43,3 +43,6 @@ keymap("v", "p", '"_dP', opts)
 
 --Clear highlight after search
 keymap("n", "<leader>h", ":nohlsearch<CR>", opts)
+
+-- Yank current buffers filepath
+keymap("n", "yp", ':let @+ = expand("%")<CR>', opts)
