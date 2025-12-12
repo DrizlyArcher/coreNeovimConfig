@@ -37,6 +37,7 @@ return {
           { name = "nvim_lsp" },
           { name = "luasnip" }, -- For luasnip users.
           { name = "copilot" },
+          { name = "vim-dadbod-completion" },
         }, {
           { name = "buffer" },
         }),

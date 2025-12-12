@@ -90,6 +90,15 @@ return {
       builtin.find_files({ cwd = vim.fn.stdpath("config") })
     end, { desc = "[S]earch [N]eovim files" })
 
+    -- Shortcut for searching through notes dir
+    vim.keymap.set("n", "<leader>san", function()
+      local manualCwd = vim.fn.expand("~/notes")
+      builtin.find_files({
+        cwd = manualCwd,
+        prompt_title = "Find Neorg Notes",
+      })
+    end, { desc = "[S]earch [A]ll neorg [N]otes" })
+
     local pickers = require("telescope.pickers")
     local finders = require("telescope.finders")
     local conf = require("telescope.config").values
