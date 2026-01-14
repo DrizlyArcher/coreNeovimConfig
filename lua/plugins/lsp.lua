@@ -34,6 +34,8 @@ return {
         vim.cmd("vertical split")
         vim.lsp.buf.definition()
       end, { desc = "[G]o to [D]efinition in a vertical split" })
+
+      vim.keymap.set("n", "<leader>cv", vim.lsp.buf.rename, { desc = "[C]hange [V]ariable Name" })
     end,
   },
 }
