@@ -26,7 +26,7 @@ return {
             ["<C-j>"] = require("telescope.actions").move_selection_next,
           },
         },
-        file_ignore_patterns = { ".js", ".d.ts" },
+        file_ignore_patterns = { ".js", "%.d%.ts$" },
       },
       extensions = {
         ["ui-select"] = {
