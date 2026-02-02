@@ -38,5 +38,6 @@ require("lazy").setup({
   require("plugins.vim-tmux-navigator"),
   require("plugins.blink-indent"),
   require("plugins.vim-dadbod"),
-  require("plugins.better-ts-errors")
+  require("plugins.better-ts-errors"),
+  require("plugins.debugger")
 })
