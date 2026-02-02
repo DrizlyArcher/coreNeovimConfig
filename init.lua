@@ -31,14 +31,13 @@ require("lazy").setup({
   require("plugins.nvim-ufo"),
   require("plugins.visual-multi"),
   --require("plugins.copilot"),
-  require("plugins.glow-markdown"),
   require("plugins.autotag"),
   require("plugins.vim-surround"),
   require("plugins.neorg"),
   require("plugins.tiny-inline-diagnostic"),
   require("plugins.vim-tmux-navigator"),
-  require("plugins.vim-test"),
   require("plugins.blink-indent"),
   require("plugins.vim-dadbod"),
-  require("plugins.better-ts-errors")
+  require("plugins.better-ts-errors"),
+  require("plugins.debugger")
 })
