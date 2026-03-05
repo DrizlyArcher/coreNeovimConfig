@@ -39,5 +39,6 @@ require("lazy").setup({
   require("plugins.blink-indent"),
   require("plugins.vim-dadbod"),
   require("plugins.better-ts-errors"),
-  require("plugins.debugger")
+  require("plugins.debugger"),
+  require("plugins.todo-comments")
 })
