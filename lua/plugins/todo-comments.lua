@@ -14,7 +14,6 @@ return {
           -- signs = false, -- configure signs for some keywords individually
         },
         TODO = { icon = " ", color = "info" },
-        WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
         PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
         NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
       },

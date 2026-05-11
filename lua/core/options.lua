@@ -21,6 +21,7 @@ local options = {
   splitright = true,
   spell = true,
   -- spelllang = "en_GB"     --Apparently this isn't supported for adding exceptions
+  equalalways = false
 }
 
 -- Loop over options table

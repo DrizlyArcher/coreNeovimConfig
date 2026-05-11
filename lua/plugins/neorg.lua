@@ -22,7 +22,7 @@ return {
               --["general-repo-notes"] = "~./Desktop/Repositories/rise-pol/apps/charlie-notes-general"
             },
             default_workspace = "notes",
-            open_last_workspace = true,
+            open_last_workspace = false,
             use_popup = true
           }
         }
